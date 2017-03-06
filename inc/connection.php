@@ -1,6 +1,6 @@
 <?php 
 	$mysqlhost = 'localhost';
-	$mysqldb = 'calender';
+	$mysqldb = 'calendar';
 	$mysqluser = 'root';
 	$mysqlpass = '';
 	
