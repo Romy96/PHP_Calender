@@ -1,12 +1,7 @@
-<!doctype html>
+@extends('layout')
 
-<html>
-	<head>
-		<title>Verjaardagskalender</title>
-        <link href="css/main.css" rel="stylesheet" type="text/css">
-	</head>
-	
-	<body>
+@section('content')
+
     @if(isset($birthday))
         @foreach ($birthday as $row)
 		<h1>{{$row['month']}}</h1>
@@ -21,5 +16,4 @@
 
         <p><a href="create.php">+ Toevoegen</a></p>
 
-	</body>
-</html>
+@endsection

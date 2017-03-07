@@ -107,3 +107,7 @@ form label {
 form input[type=submit]:only-child {
     margin-left: 100px;     /* place submit button underneath fields */
 }
+
+form {
+  margin-bottom: 15px;
+}

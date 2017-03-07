@@ -1,6 +1,7 @@
 <?php 
  require_once 'inc/session.php';
  require_once 'inc/blade.php';
+ $errors = [];
 
  require 'inc/connection.php';
 
@@ -8,5 +9,6 @@
  $sql->execute();
 
  $birthday = $sql->fetchAll(PDO::FETCH_ASSOC);
+
  // output everything
-echo $blade->view()->make('index')->with('birthday', $birthday)->render();
+echo $blade->view()->make('index')->with('birthday', $birthday)->withErrors($errors)->render();
