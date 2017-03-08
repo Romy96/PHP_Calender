@@ -2,7 +2,9 @@
 
 @section('content')
 
-		<form role="post" action="create_action.php">
+<h1>Voer een verjaardag in</h1>
+
+		<form role="form" method="post" action="create_action.php">
 			<div>
 				<label for="naam">Naam</label>
 				<input type="text" id="naam" name="naam" placeholder="vul je voornaam in">
