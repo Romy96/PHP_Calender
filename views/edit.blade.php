@@ -6,9 +6,13 @@
 
 	<h1>Bewerken verjaardag</h1>
 
+	<?php
+	var_export($birthday);
+	?>
+
 		<form role="form" method="post" action="edit_action.php">
 			<div>
-				<input type="hidden" name="id" value="{{$birthday['id']}}">
+				<input type="hidden" name="id" id="id" value="{{$birthday['id']}}">
 				<label for="naam">Naam</label>
 				<input type="text" id="naam" name="naam" value="{{$birthday['person']}}">
 			</div>
