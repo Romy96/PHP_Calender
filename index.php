@@ -8,7 +8,7 @@
  $sql = $db->prepare("SELECT * FROM birthdays ORDER BY month ASC, day ASC, year ASC");
  $sql->execute();
 
- $birthday = $sql->fetchAll(PDO::FETCH_ASSOC);
+ $birthdays = $sql->fetchAll(PDO::FETCH_ASSOC);
 
  // output everything
-echo $blade->view()->make('index')->with('birthday', $birthday)->withErrors($errors)->render();
+echo $blade->view()->make('index')->with('birthdays', $birthdays)->withErrors($errors)->render();
