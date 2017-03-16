@@ -1,7 +1,6 @@
 <?php
 require 'inc/connection.php';
 require 'inc/session.php';
-require 'inc/post.php';
 
 $Naam = $_POST['naam'];
 $Dag = $_POST['dag'];

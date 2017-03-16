@@ -21,7 +21,7 @@
                 }
                 $id =  $birthday['id'];
                 // print birthday's (printf replaces %s)
-                printf('<p><a href="edit.php?id=%s">%s (%s)</a> <a href="delete.php?id=%s">x</a></p>' . PHP_EOL, 
+                printf('<p><a href="edit.php?id=%s">%s (%s)</a> <a href="delete_action.php?id=%s">x</a></p>' . PHP_EOL, 
                     $id, $birthday['person'], $birthday['year'], $id);
                 $lastMonth = $birthday['month'];
                 $lastDay = $birthday['day'];
